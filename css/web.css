@@ -8,6 +8,10 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
     color: red;
 }
@@ -59,4 +63,108 @@ a:hover {
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+/* layout */
+
+#header {
+    background-color:cornflowerblue;
+}
+
+#header h1 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#header ul#gnb {
+    height: 100%;
+}
+
+ul#gnb ul {
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    height: 0;
+    overflow: hidden
+}
+
+ul#gnb ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+ul#gnb>li>a {
+    display: inline-block;
+    padding: 2rem 4rem;
+}
+
+ul#gnb>li:hover>a {
+    background-color:rgb(30, 144, 255,.7);
+    color:aliceblue;
+}
+
+ul#gnb>li:hover>ul li a {
+    background-color: #000;
+}
+
+ul#gnb>li>ul li a:hover {
+    background-color:#333;
+}
+
+ul#gnb>li:hover>ul {
+    height: 210px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-wrapper>div {
+    flex-shrink: 0;
+}
+
+.swiper-wrapper>div:nth-child(1) {
+    background: url('../images/banner_0.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper>div:nth-child(2) {
+    background: url('../images/banner_1.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper>div:nth-child(3) {
+    background: url('../images/banner_2.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper {
+    width: 1200px;
+    overflow: hidden;
+}
+
+#footer {
+    background-color: gray;
+}
+
+#footer>div {
+    margin-right: 200px;
+    height: 100%;
+}
+
+#footer>div ul li a {
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+#footer>div p {
+    padding: .5rem 0;
 }
